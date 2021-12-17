@@ -1,0 +1,454 @@
+/*pagina login*/
+
+.container {
+width: 100vw;
+height: 100vh;
+background: transparent;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.box {
+width: 300px;
+height: 360px;
+margin-top: 10px;
+box-shadow: 0 4px 4px 1px #989898;
+padding: 4.19rem;
+padding-top: 1rem;
+padding-bottom: 5.5rem;
+border-top: 40px solid #153B83;
+border-radius: 10px;
+}
+
+.logo-1 {
+	display: flex;
+    width: 8em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 1px;
+	
+	/* personalizar texto*/
+	margin-left: 30px;
+	color:#153B83;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #ECF0ED;
+}
+
+.logo-2{
+	display: flex;
+    width: 8em;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 1px;
+
+	/* personalizar texto*/
+	color:#153B83;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #ECF0ED;
+}
+
+.logos {
+	margin: 0 auto;  
+}
+
+.logos li {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: center;
+	margin: 0 1.5%;
+	box-sizing: border-box;
+}
+
+.body1 {
+margin: 0px;
+background: linear-gradient( #FFFFFF 65%, #ECF0ED);
+}
+
+.conteudo {
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+
+.input-padrao {
+	margin: 0 auto;
+	width: 100%;
+}	 
+
+.label-float{
+  position: relative;
+  padding-top: 16px;
+  margin-top: 20px;
+}
+
+.label-float input{
+  border: 0;
+  border-bottom: 2px solid #9F1429;
+  outline: none;
+  min-width: 100px;
+  font-size: 17px;/*letra input*/
+  font-family: 'Montserrat', sans-serif;
+  color:#808080;
+  background: transparent;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+}
+
+.label-float input::placeholder{
+  color:gray;
+  text-align: right;
+}
+
+
+.label-float label{
+	font-size: 18px;/*tamanho grande*/
+	color: #9F1429;
+	font-family: 'Montserrat', sans-serif;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 15px;
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 15px; /* tamanho pequeno */
+  margin-top: -3px;  
+  color:#153B83;
+}
+
+input:focus {
+	border-bottom: 2.3px solid #153B83;
+
+}
+.input-padrao:valid {
+	border-bottom: 2.3px solid #153B83;
+}
+
+input:hover{
+	border-bottom: 2.3px solid #153B83;
+}
+
+.label-float input:hover + label,
+.label-float input:not(:placeholder-shown) + label{
+	color:#153B83;
+}
+
+
+.entrar {
+	width: 100%;
+	padding: 15px 0;
+	background: #9F1429;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	border: none;
+	border-radius: 5px;
+	margin: 0 auto;
+	transition: 1s all;
+	cursor: pointer;
+	margin-top: 60px;
+}
+
+.entrar:hover {
+	background: #153B83;
+}
+
+
+
+/*Pagina boas vindas*/
+
+body {	
+	background: url("fundo.png");
+	background-attachment: fixed;
+	background-size: cover; 
+	
+}
+
+header {
+	padding: 0;
+	border-bottom: 0.3px solid lightgrey;
+	background-color: rgba(244, 247, 253, 0.3);	
+}
+
+.cabeçalho {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background: none;
+	box-shadow: 0 4px 4px -2px #989898;
+}
+
+
+.containerpag2 {
+width: 100vw;
+height: 90vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.boxpag2 {
+width: 300px;
+height: 300px;
+box-shadow: 0 4px 4px 2px #989898;
+padding: 4.19em;
+padding-top: 2em;
+border-radius: 10px;
+background-color: rgba(244, 247, 253, 0.2);
+}
+
+.logospag2 {
+	margin: 0 auto;  
+}
+
+.logospag2 li {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: center;
+	margin: 0 10%;
+	box-sizing: border-box;
+}
+
+.titulo {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: #153B83;
+	margin: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.texto {
+	text-align: center;
+	margin-top: 100px;
+	font-size: 1.5em;
+	color: #153B83;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.texto strong{
+	font-weight: bold;
+}
+
+/*pagina erro*/
+
+.containerpag3 {
+width: 100vw;
+height: 80vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.boxpag3 {
+width: 600px;
+height: 300px;
+box-shadow: 0 4px 4px -2px #989898;
+padding: 4.19em;
+padding-top: 2em;
+border-radius: 10px;
+background-color: rgba(244, 247, 253, 0.5);
+}
+
+.tituloerro {
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	color: #153B83;
+	margin: 10px;
+	margin-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.possiveiserros {
+	text-align: left;
+	margin: 30px 0;
+	font-size: 1.5em;
+	color: #153B83;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.possiveiserros li {
+	font-size: 20px;
+	margin: 8px 0;
+}
+
+.possiveiserros li:before {
+	content: "➤ ";
+}
+
+.textoerro{
+	font-size: 20px;
+	color: #153B83;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Adaptação Mobile*/
+
+@media screen and (max-width: 440px) and (orientation: portrait) {
+	
+	.box {
+		width: 100%;
+		height:90%;
+		box-shadow: none;
+		background: transparent;	
+		margin: 0;	
+		border: none;
+		padding: 3rem; 
+	}
+
+	.logos {
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo-direcional {
+		width: 10em;
+		padding: 0;
+	}
+
+	.logo-riva{
+		width: 10em;
+	}
+
+/*pagina de boas vindas mobile*/
+
+	body {
+		background: url("fundo.png");
+		background-attachment: fixed;
+		background-size: cover; 
+	}
+	
+	.containerpag2 {
+		height: 75vh;
+	}
+
+	.boxpag2 {
+		width: 100%;
+		height: 380px;
+		margin: 0 20px;
+		padding: 10px;
+	}
+
+	.titulo {
+		margin-top: 30px;
+	}
+
+	.texto {
+		margin-top: 100px;
+	}
+
+	.cabeçalho {
+	padding-top: 10px;
+	}
+
+	header {
+		background-color: rgba(244, 247, 253, 0.4);
+		border-bottom: none;
+	}
+
+	.logodirpag2 {
+		width: 8em;
+	}
+
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+	/*pagina erro mobile*/
+
+	.containerpag3 {
+		height: 80vh;
+		background: transparent;
+	}
+
+	.boxpag3 {
+		width: 100%;
+		height: 90%;
+		margin: 0 20px;
+		padding: 10px;
+		background-color: rgba(244, 247, 253, 0.6);
+	}
+
+	.tituloerro {
+		margin-bottom: 20px;
+	}
+
+	.textoerro {
+		margin-bottom: 40px;
+	}
+
+	.possiveiserros li {
+		margin: 20px 0;
+	}
+}
+
+@media screen and (min-width: 440px) and (max-width: 600px) and (orientation: landscape) {
+	.box {
+		box-shadow: none;
+		background: none;
+		border: none;
+	}
+	.conteudo {
+		padding-top: 5px; 
+	}
+}
+
+@media screen and (min-width: 440px) and (max-width: 900px) and (orientation: landscape) {
+
+	.containerpag2 {
+		height: 80vh;
+	}
+
+	.boxpag2 {
+		width: 100%;
+		height: 200px;
+		margin: 0 20px;
+		padding: 10px;
+		border: 0.3px solid grey;
+	}
+
+	.titulo {
+		margin-top: 30px;
+	}
+	
+	.texto {
+		margin-top: 50px;
+	}
+
+	.boxpag3 {
+		width: 100%;
+		height: 260px;
+		margin: 0 20px;
+		padding: 10px;
+		border: 0.3px solid grey;
+	}
+
+	.textoerro {
+		margin-bottom: 20px;
+	}
+	
+	.tituloerro {
+		margin-bottom: 20px;
+	}
+}
+
